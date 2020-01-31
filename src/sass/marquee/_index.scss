@@ -1,0 +1,25 @@
+
+.footer-animate {
+    height: 40vh;
+    @include sm {
+      height: auto;
+    }
+
+
+  }
+  
+
+  .text-animate {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    margin: 0px;
+    font-size: 10vw;
+    letter-spacing: inherit;
+
+    @include sm {
+      left: 20px;
+    }
+  }
+  
+
