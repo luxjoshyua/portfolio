@@ -9,6 +9,11 @@ div.intro-wrapper {
   .inner {
     padding: 0 60px;
 
+    a:hover {
+      color: inherit;
+      mix-blend-mode: difference;
+    }
+
     h1 {
       font-size: 16.5vw;
       cursor: pointer;
