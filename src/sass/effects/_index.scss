@@ -1,9 +1,3 @@
-body {
-    font-size: 3.5vmin;
-    line-height: 1.75;
-    font-weight: 500;
-}
-
 a {
     text-decoration: none;
     color: #fff;
@@ -14,7 +8,15 @@ a:hover {
 }
 
 ul {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 30px; 
+}
+
+li {
+    font-size: 3vh;
+    line-height: 5vh;
+
+    @include sm {
+        font-size: 26px;
+        line-height: 42px;
+    }
 }
