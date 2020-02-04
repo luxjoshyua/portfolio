@@ -5,7 +5,6 @@ const example = ['Hi', 'I', 'am', 'looking', 'for',
 
 textSequence(0);
 function textSequence(i) {
-
     if (example.length > i) {
         setTimeout(function() {
             document.querySelector(".text-animate").innerHTML = example[i];
