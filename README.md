@@ -1,6 +1,9 @@
 # Portfolio page
 * Always work in progress!
 
+
+$ npm run deploy when ready to deploy
+
 Run $ npm run build when ready to deploy
 $ cd dist/
 $ git init
