@@ -3,12 +3,10 @@
 
 
 $ npm run deploy when ready to deploy
-
-Run $ npm run build when ready to deploy
-$ cd dist/
-$ git init
-$ git remote add origin https://github.com/luxjoshyua/portfolio.git
-$ git checkout build
-$ git add .
-$ git commit origin head
-$ git push
+1. $ cd dist/
+2. $ git init
+3. $ git remote add origin https://github.com/luxjoshyua/portfolio.git
+4. $ git checkout build
+5. $ git add .
+6. $ git commit origin head
+7. $ git push
