@@ -3,7 +3,7 @@
 
 
 $ npm run deploy when ready to deploy
-1. $ cd dist/
+1. $ cd dist/ - make sure dist is .gitignored
 2. $ git init
 3. $ git remote add origin https://github.com/luxjoshyua/portfolio.git
 4. $ git checkout build
