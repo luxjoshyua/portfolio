@@ -21,7 +21,7 @@ function textSequence2(i) {
       }, 1000); // 1 second (in milliseconds)
     } else if (text2Cycle.length == i) {
       // Loop
-      textSequence(0);
+      textSequence2(0);
     }
   }
 }

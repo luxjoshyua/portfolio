@@ -18,15 +18,17 @@ const text2Loop = [
 
 textSequence(0);
 
-const textAnimate = document.querySelector(".text-animate");
 function textSequence(i) {
-  if (text2Loop.length > i) {
-    setTimeout(function() {
-      textAnimate.innerHTML = text2Loop[i];
-      textSequence(++i);
-    }, 1000); // 1 second (in milliseconds)
-  } else if (text2Loop.length == i) {
-    // Loop
-    textSequence(0);
+  const textAnimate = document.querySelector(".text-animate");
+  if (textAnimate !== null) {
+    if (text2Loop.length > i) {
+      setTimeout(function() {
+        textAnimate.innerHTML = text2Loop[i];
+        textSequence(++i);
+      }, 1000); // 1 second (in milliseconds)
+    } else if (text2Loop.length == i) {
+      // Loop
+      textSequence(0);
+    }
   }
 }
