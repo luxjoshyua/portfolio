@@ -10,14 +10,14 @@
 // import vid10 from "./assets/videos/super-shapes-c.mp4";
 // import vid11 from "./assets/videos/valencia-c.mp4";
 
-
-
-const a = document.querySelector('.about');
-a.addEventListener('click', (e) => {
-    const about = document.querySelector('.about-reveal');
+const a = document.querySelector(".about");
+if (a !== null) {
+  a.addEventListener("click", (e) => {
+    const about = document.querySelector(".about-reveal");
     if (about.style.display === "block") {
-        about.style.display = "none";
+      about.style.display = "none";
     } else {
-        about.style.display = "block";
+      about.style.display = "block";
     }
-});
+  });
+}
