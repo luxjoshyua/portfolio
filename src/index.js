@@ -9,7 +9,7 @@ import "./js/text-cycle";
 import "./js/drawings";
 import "./js/projects";
 
-// console.log(
-//   "%c This is the portfolio site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",
-//   "font-size: 50px;background:red;text-shadow:10px 10px 0 blue"
-// );
+console.log(
+  "%c This is the portfolio site of Joshua Fielding, a frontend developer, reach out at josh.e.fielding@gmail.com",
+  "font-size: 50px;background:red;text-shadow:10px 10px 0 blue"
+);
