@@ -1,228 +1,193 @@
 // FONTS
 @font-face {
-    font-family: 'Neue Haas Unica';
-    src: url('../assets/fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'),
-        url('../assets/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Neue Haas Unica';
+  src: url('../assets/fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'),
+    url('../assets/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // rotating circle
 @keyframes rotates {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-// page fadein
-@-moz-keyframes pageFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes pageFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes pageFadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes pageFadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Neue Haas Unica', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 2vw;
-    line-height: 1.35em;
-    -webkit-font-smoothing: antialiased;
-    // animation: pageFadeIn 900s;
+  margin: 0;
+  padding: 0;
+  font-family: 'Neue Haas Unica', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 1.35em;
+  -webkit-font-smoothing: antialiased;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-    letter-spacing: 1px;
-    opacity: .8;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 main {
+  .hero {
+    position: relative;
+    display: block;
+    // max-width: 1400px;
+    max-width: 100%;
+    padding: 10vw 17vw 2.5vw;
 
-    .hero {
-        position: relative;
-        display: block;
-        // max-width: 1400px;
-        max-width: 100%;
-        padding: 10vw 17vw 2.5vw;
+    .header-txt {
+      font-size: 2.5vw;
+      line-height: 1.5em;
+      margin: 0px;
 
-        .header-txt {
-            font-size: 2.5vw;
-            line-height: 1.5em;
-            margin: 0px;
-
-            .brand {
-                border-bottom: 2px solid #f00;
-            }
-
-        }
-
-        .text-animate-projects {
-            margin-bottom: 32px; 
-        }
-
-        .about {
-            border-bottom: 2px solid blue;
-            display: block;
-            width: fit-content;
-
-            span {
-                font-size: 2.5vw;
-                line-height: 1.3em;
-            }
-        }
-
-        .about-reveal {
-            display: none;
-            margin-top: 32px;
-
-            p {
-                padding-bottom: 12px;
-                font-size: 2.5vw;
-                line-height: 1.3em;
-            }
-        }
+      .brand {
+        border-bottom: 2px solid #f00;
+      }
     }
 
-    .projects {
-        padding: 5vw 17vw;
-
-        h2 {
-            font-size: 2.5vw;
-            line-height: 1.3em;
-            font-weight: 400;
-
-            .underline {
-                border-bottom: 2px solid green;
-            }
-        }
-
-        .project-pad {
-            padding: 3vw 0;
-        }
-
-        .project-video {
-            position: relative;
-            border-radius: 5px;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-            // cursor: wait;
-            transition: opacity 500ms;
-        }
-
-        .project-new {
-
-            &:before {
-                content: 'New';
-                text-transform: uppercase;
-                position: absolute;
-                top: -20px;
-                right: -20px;
-                width: 40px;
-                height: 40px;
-                line-height: 41px;
-                border-radius: 40px;
-                background: green;
-                text-align: center;
-                font-size: 9px;
-                color: #fff;
-                letter-spacing: 0.1em;
-                animation: rotates 10000ms infinite linear;
-                pointer-events: none;
-                z-index: 1;
-            }
-        }
+    .text-animate-projects {
+      margin-bottom: 32px;
     }
 
-    .project-title {
-        position: relative;
-        margin-top: 1em;
+    .about {
+      border-bottom: 2px solid blue;
+      display: block;
+      width: fit-content;
 
-        h4 {
-            font-size: 2.5vw;
-            line-height: 1.5em;
-            font-weight: 400;
-            margin: 0px;
-        }
-
-        p {
-            font-size: 2.3vw;
-            line-height: 1.5em;
-            color: #777777;
-            margin: 0px;
-            font-weight: 400;
-        }
-
-        .project-link {
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            text-align: right;
-
-            &:after {
-                content: '↗';
-                font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
+      span {
+        font-size: 2.5vw;
+        line-height: 1.3em;
+      }
     }
 
-    // .main
+    .about-reveal {
+      display: none;
+      margin-top: 32px;
+
+      p {
+        padding-bottom: 30px;
+        font-size: 2.5vw;
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  .projects {
+    padding: 5vw 17vw;
+
+    h2 {
+      font-size: 2.5vw;
+      line-height: 1.3em;
+      font-weight: 400;
+
+      .underline {
+        border-bottom: 2px solid green;
+      }
+    }
+
+    .project-pad {
+      padding: 3vw 0;
+    }
+
+    .project-video {
+      position: relative;
+      border-radius: 5px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      // cursor: wait;
+      transition: opacity 500ms;
+    }
+
+    .project-new {
+      &:before {
+        content: 'New';
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        line-height: 41px;
+        border-radius: 40px;
+        background: green;
+        text-align: center;
+        font-size: 9px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        animation: rotates 10000ms infinite linear;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+  }
+
+  .project-title {
+    position: relative;
+    margin-top: 1em;
+
+    h4 {
+      font-size: 2.5vw;
+      line-height: 1.5em;
+      font-weight: 400;
+      margin: 0px;
+    }
+
+    p {
+      font-size: 2.3vw;
+      line-height: 1.5em;
+      color: #777777;
+      margin: 0px;
+      font-weight: 400;
+    }
+
+    .project-link {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: right;
+
+      &:after {
+        content: '↗';
+        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+          Helvetica, Arial, sans-serif;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // .main
 }
