@@ -3,7 +3,7 @@ div.intro-wrapper {
   margin: 60px 0;
 
   @include sm {
-    margin-top: 90px
+    margin-top: 90px;
   }
 
   .inner {
@@ -38,7 +38,7 @@ div.intro-wrapper {
   position: absolute;
   font-size: 1vw;
   letter-spacing: 0.1vw;
-  line-height: 1.09375vw;  
+  line-height: 1.09375vw;
   transform: translateX(100%) rotateZ(90deg);
   transform-origin: top left;
   top: 40px;
@@ -59,8 +59,11 @@ div.intro-wrapper {
     margin-bottom: 80px;
 
     img {
-      transition: all 5s cubic-bezier(0.98, 0.65, 0.69, 0.96);
+      transition: all 1s ease-in-out 0.15s;
       max-width: 90%;
+      &:hover {
+        filter: grayscale(100%);
+      }
     }
 
     .section-text-wrapper {
