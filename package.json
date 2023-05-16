@@ -42,6 +42,7 @@
   ],
   "dependencies": {
     "jquery": "^3.5.0",
+    "locomotive-scroll": "^4.1.4",
     "surge": "^0.23.1"
   }
 }

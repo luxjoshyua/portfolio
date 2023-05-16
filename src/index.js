@@ -6,6 +6,7 @@ import './js/text-cycle-projects';
 import './js/text-cycle';
 import './js/drawings';
 import './js/projects';
+// import './js/parallax';
 
 // Add in wacky console message
 console.log(
