@@ -3,3 +3,5 @@ sandbox.js
 node_modules
 *videos
 /dist
+*.DS_Store
+
